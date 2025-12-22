@@ -1,6 +1,7 @@
 name: CI - PR Checks
 
 on:
+  workflow_dispatch:
   push:
     branches:
       - main
