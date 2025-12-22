@@ -26,7 +26,6 @@ jobs:
               - 'docs/**'
   lint-and-test:
     needs: check-changes
-    if: ${{ needs.check-changes.outputs.docs == 'false' }}
     runs-on: ubuntu-latest
     steps:
       - name: Checkout source
